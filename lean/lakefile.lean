@@ -13,5 +13,6 @@ lean_lib LeanPy where
     `HeraklesBirlesik,
     `LobiFaz,
     `MatematikProjesi,
-    `RetrievalRL
+    `RetrievalRL,
+    `LeanPyKopru
   ]
