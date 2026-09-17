@@ -1,0 +1,10 @@
+[project]
+name = "leanpy"
+version = "0.1.0"
+description = "Lean-Provable Python for agentic computation"
+requires-python = ">=3.10"
+
+[tool.leanpy]
+lean_dir = "lean"
+lean_bin = "/root/.elan/bin/lean"
+discipline = "sorry/admit iceren paket PR ACAMAZ"
