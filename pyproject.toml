@@ -6,5 +6,5 @@ requires-python = ">=3.10"
 
 [tool.leanpy]
 lean_dir = "lean"
-lean_bin = "/root/.elan/bin/lean"
+lean_bin = "lean"
 discipline = "sorry/admit iceren paket PR ACAMAZ"
