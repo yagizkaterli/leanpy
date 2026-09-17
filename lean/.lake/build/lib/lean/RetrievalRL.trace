@@ -1,0 +1,29 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["57719fa62197a3d1.olean"],
+  "m": false,
+  "i": "f600d607552169b8.ilean",
+  "c": "aa2a673a62393576.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/herakles/repos-leanpy/lean/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /root/herakles/repos-leanpy/lean/RetrievalRL.lean -o /root/herakles/repos-leanpy/lean/.lake/build/lib/lean/RetrievalRL.olean -i /root/herakles/repos-leanpy/lean/.lake/build/lib/lean/RetrievalRL.ilean -c /root/herakles/repos-leanpy/lean/.lake/build/ir/RetrievalRL.c --setup /root/herakles/repos-leanpy/lean/.lake/build/ir/RetrievalRL.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["deps",
+   [["leanpy/LeanPy:extraDep", [["@leanpy:extraDep", "00000000000006bb"]]],
+    ["imports", "00000000000006bb"]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/root/herakles/repos-leanpy/lean/RetrievalRL.lean", "dcdc8d17818e797d"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: RetrievalRL", "cacf76af6308fb89"],
+  ["Package.id?: (some leanpy)", "8ce30c873f87fc60"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "70d0f4271cf7ef28"}

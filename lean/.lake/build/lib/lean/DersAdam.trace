@@ -1,0 +1,32 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["e4bfe0cf7aec4310.olean"],
+  "m": false,
+  "i": "92745ddba3f3a4ea.ilean",
+  "c": "f08a6f575a4c4dec.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/herakles/repos-leanpy/lean/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /root/herakles/repos-leanpy/lean/DersAdam.lean -o /root/herakles/repos-leanpy/lean/.lake/build/lib/lean/DersAdam.olean -i /root/herakles/repos-leanpy/lean/.lake/build/lib/lean/DersAdam.ilean -c /root/herakles/repos-leanpy/lean/.lake/build/ir/DersAdam.c --setup /root/herakles/repos-leanpy/lean/.lake/build/ir/DersAdam.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "DersAdam.lean:192:40: Variable name `ds2` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _ds2\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["leanpy/LeanPy:extraDep", [["@leanpy:extraDep", "00000000000006bb"]]],
+    ["imports", "00000000000006bb"]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/root/herakles/repos-leanpy/lean/DersAdam.lean", "3c4a35b641b64153"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: DersAdam", "d98ba52397e382c3"],
+  ["Package.id?: (some leanpy)", "8ce30c873f87fc60"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "dff140682017558e"}
