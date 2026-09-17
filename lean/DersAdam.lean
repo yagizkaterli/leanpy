@@ -189,7 +189,7 @@ theorem t13_diffgeom_kurulu_degil : ¬ YontemKurulu ⟨"05 Differential Geometry
 /-- T14: ASIMETRI TEOREMI -- yontem kurulu ders VAR ama cogu derste YOK.
     "yontem tek kasada, icerik cok kasa" -- kapsulun cumlesinin formal hali.
     Kanit: ayni ad tasiyan iki ders AYNI kayittir; biri kurulu digeri degil OLAMAZ. -/
-theorem t14_asimetri (ad : String) (ds1 ds2 : Nat) (yv1 yv2 : Bool)
+theorem t14_asimetri (ad : String) (ds1 _ds2 : Nat) (yv1 yv2 : Bool)
     (h1 : YontemKurulu ⟨ad, ds1, yv1⟩) (h2 : yv2 = false) (heq : yv1 = yv2) : False := by
   unfold YontemKurulu at h1
   rw [heq, h2] at h1
