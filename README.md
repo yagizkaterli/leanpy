@@ -2,6 +2,10 @@
 
 **An experimental proof layer for agentic task contracts.**
 
+![LeanPy proof-layer architecture](docs/leanpy-proof-layer.svg)
+
+<sub>Deterministic README surface generated under the HERAKLES Film Factory model · [source](docs/hff/leanpy-proof-layer.source.json) · [receipt](docs/hff/leanpy-proof-layer.receipt.json)</sub>
+
 The idea is simple: treat agent/task intent like declarative state.
 Runtime code (Python today; Go/Rust are natural peers) produces artifacts and receipts; Lean proves invariants about what those artifacts are allowed to claim.
 
