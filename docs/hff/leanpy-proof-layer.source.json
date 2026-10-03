@@ -1,0 +1,18 @@
+{
+  "schema": "hff-source-v1",
+  "id": "leanpy-proof-layer-readme",
+  "title": "LeanPy — Proof Layer for Agent Intent",
+  "claim": "Runtime code produces a candidate; Lean checks explicit invariants before the result is trusted.",
+  "limitations": [
+    "LeanPy does not prove Python itself correct.",
+    "Generic runtime-value → exact Lean proposition binding is still work in progress."
+  ],
+  "flow": [
+    "Intent / Task Contract",
+    "Runtime Execution",
+    "Candidate + Receipt",
+    "Lean Invariants",
+    "Trusted State"
+  ],
+  "source_repo": "yagizkaterli/leanpy"
+}
