@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">LeanPy proof-layer architecture</title>
+  <desc id="desc">A deterministic architecture diagram showing intent flowing through runtime execution, candidate receipts, Lean invariants, and into trusted state.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f7f4}.ink{fill:#161616}.muted{fill:#666}.line{stroke:#1f1f1f;stroke-width:2;fill:none}
+      .box{fill:#fff;stroke:#1f1f1f;stroke-width:2}.accent{fill:#e7f0ff;stroke:#1f1f1f;stroke-width:2}
+      .good{fill:#e9f7ed;stroke:#1f1f1f;stroke-width:2}.warn{fill:#fff4df;stroke:#1f1f1f;stroke-width:2}
+      .title{font:700 34px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.sub{font:18px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .label{font:700 18px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.small{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .micro{font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f1f1f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="560" rx="18"/>
+  <text x="70" y="78" class="title ink">LeanPy</text>
+  <text x="70" y="112" class="sub muted">proof layer for agent intent</text>
+
+  <line x1="70" y1="145" x2="1330" y2="145" class="line"/>
+
+  <rect x="70" y="205" width="220" height="110" rx="12" class="box"/>
+  <text x="180" y="247" text-anchor="middle" class="label ink">INTENT</text>
+  <text x="180" y="276" text-anchor="middle" class="small muted">task contract</text>
+
+  <line x1="290" y1="260" x2="360" y2="260" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="370" y="205" width="220" height="110" rx="12" class="accent"/>
+  <text x="480" y="247" text-anchor="middle" class="label ink">RUNTIME</text>
+  <text x="480" y="276" text-anchor="middle" class="small muted">Python · Go · Rust</text>
+
+  <line x1="590" y1="260" x2="660" y2="260" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="670" y="205" width="220" height="110" rx="12" class="box"/>
+  <text x="780" y="247" text-anchor="middle" class="label ink">CANDIDATE</text>
+  <text x="780" y="276" text-anchor="middle" class="small muted">value + receipt</text>
+
+  <line x1="890" y1="260" x2="960" y2="260" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="970" y="205" width="170" height="110" rx="12" class="warn"/>
+  <text x="1055" y="247" text-anchor="middle" class="label ink">LEAN</text>
+  <text x="1055" y="276" text-anchor="middle" class="small muted">invariants</text>
+
+  <line x1="1140" y1="260" x2="1210" y2="260" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="1220" y="205" width="110" height="110" rx="12" class="good"/>
+  <text x="1275" y="247" text-anchor="middle" class="label ink">TRUST</text>
+  <text x="1275" y="276" text-anchor="middle" class="small muted">state</text>
+
+  <text x="70" y="380" class="label ink">Example invariant</text>
+  <text x="70" y="414" class="sub ink">observations = 0  →  state ≠ Verified</text>
+
+  <rect x="70" y="455" width="1260" height="58" rx="10" class="box"/>
+  <text x="92" y="481" class="small ink">BOUNDARY:</text>
+  <text x="195" y="481" class="small muted">LeanPy does not prove Python correct. It proves explicit properties of a concrete result.</text>
+  <text x="92" y="503" class="micro muted">Current open problem: bind the exact runtime candidate to the exact Lean proposition being proved.</text>
+</svg>
