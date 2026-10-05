@@ -14,5 +14,6 @@ lean_lib LeanPy where
     `LobiFaz,
     `MatematikProjesi,
     `RetrievalRL,
-    `LeanPyKopru
+    `LeanPyKopru,
+    `MagnumOpus
   ]
