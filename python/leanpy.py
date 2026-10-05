@@ -19,8 +19,8 @@ import subprocess, hashlib, json, os
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
-LEAN_DIR = os.environ.get("LEANPY_LEAN_DIR", "/root/herakles/repos-leanpy/lean")
-LEAN_BIN = os.environ.get("LEANPY_BIN", "/root/.elan/bin/lean")
+LEAN_DIR = os.environ.get("LEANPY_LEAN_DIR", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "lean"))
+LEAN_BIN = os.environ.get("LEANPY_BIN", "lean")
 
 
 @dataclass
