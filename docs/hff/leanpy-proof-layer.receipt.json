@@ -1,0 +1,16 @@
+{
+  "schema": "hff-receipt-v1",
+  "artifact_id": "leanpy-proof-layer-readme",
+  "generator": "HERAKLES Film Factory / deterministic SVG README surface",
+  "source_path": "docs/hff/leanpy-proof-layer.source.json",
+  "artifact_path": "docs/leanpy-proof-layer.svg",
+  "source_sha256": "6b7403f9b6e63d6992b8ab6185c799cf3598e9209693094c69c2059c0cd6830c",
+  "artifact_sha256": "9e0d603a1a1624a945e90ed58d764a2300b3097378843194f86cc610fd1ff90f",
+  "claims": [
+    "Runtime execution precedes Lean verification.",
+    "LeanPy is a proof layer around explicit invariants, not a proof of Python correctness."
+  ],
+  "limitations": [
+    "Generic candidate-to-proposition binding is not yet implemented."
+  ]
+}
